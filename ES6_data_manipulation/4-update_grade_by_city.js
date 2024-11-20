@@ -1,21 +1,19 @@
 /**
- * Updates students' grades based on their city and new grade data
- * @param {Array} students - List of student objects
- * @param {String} city - city to filter students by
- * @param {Array} newGrades - Array of grade objects with studentId and grade
- * @returns {Array} Array of updated student objects
+ * Updates the grade of students by city.
+ *
+ * @param {Array} students - List of student objects.
+ * @param {String} city - The city to filter students by.
+ * @param {Array} newGrades - List of grade objects with `studentId` and `grade`.
+ * @returns {Array} - Updated list of students with grades.
  */
 export default function updateStudentGradeByCity(students, city, newGrades) {
   return students
-    .filter(student => student.location === city)
-    .map(student => {
-        const gradeInfo = newGrades.find(grade => grade.studentId === student.id);
-
-        return {
-          id: student.id,
-          firstname: student.firstName,
-          location: student.location,
-          grade: gradeInfo ? gradeInfo.grade : 'N/A',
-        };
-    });  
+    .filter((student) => student.location === city)
+    .map((student) => {
+      const gradeObj = newGrades.find((grade) => grade.studentId === student.id);
+      return {
+        ...student,
+        grade: gradeObj ? gradeObj.grade : 'N/A',
+      };
+    });
 }
