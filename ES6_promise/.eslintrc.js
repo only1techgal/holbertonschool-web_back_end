@@ -1,13 +1,22 @@
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    es2021: true,
+  },
   extends: [
-    'airbnb-base',
+    'eslint:recommended',
     'plugin:jest/recommended',
   ],
-  plugins: [
-    'jest',
-  ],
-  parser: 'babel-eslint',
-  env: {
-    'jest/globals': true,
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  globals: {
+    "AudioWorkletGlobalScope": "readonly",
+  },
+  plugins: ['jest'],
+  rules: {
+
   },
 };
