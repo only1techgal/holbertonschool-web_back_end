@@ -8,7 +8,9 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   ]).then((results) => {
     return results.map((result) => ({
       status: result.status,
-      value: result.status === 'fulfilled' ? result.value : result.reason.message, // Extracting message from Error object
+      value: result.status === 'fulfilled' 
+        ? result.value 
+        : `Error: ${result.reason.message}`,  // Add "Error:" prefix to the message
     }));
   });
 }
