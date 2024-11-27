@@ -13,10 +13,10 @@ module.exports = {
     sourceType: 'module',
   },
   globals: {
-      "AudioWorkletGlobalScope": "readonly",
-}
+    AudioWorkletGlobalScope: 'readonly',
+  },
   plugins: ['jest'],
   rules: {
-
+    // Add custom rules here if needed
   },
 };
