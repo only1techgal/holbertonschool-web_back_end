@@ -14,7 +14,7 @@ module.exports = {
   },
   globals: {
     "AudioWorkletGlobalScope": "readonly",
-  },
+}
   plugins: ['jest'],
   rules: {
 
