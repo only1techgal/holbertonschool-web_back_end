@@ -9,7 +9,7 @@ def add(a: float, b: float) -> float:
 
     Returns:
     float: The sum of `a` and `b`.
-    
+
     Example:
     >>> add(1.11, 2.22)
     3.33
