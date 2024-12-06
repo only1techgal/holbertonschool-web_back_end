@@ -6,9 +6,9 @@ which calculates the sum of two floating-point numbers.
 """
 
 
-def to_str(n: float) -> float:
+def to_str(n: float) -> str:
     """
-    Convert a float to its string representation.
+    Converts a float to its string representation.
 
     Parameters:
     n(float): The float to convert.
