@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from typing import Iterable, Sequence, List, Tuple
+
 """
 This module provides a type-annotated function `make_multiplier`
 that returns a callable function to multiply a float by a given multiplier.
