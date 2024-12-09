@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import asyncio
-import random
 """
 This module contains a single asynchronous coroutine `wait_random`.
 The function takes an integer `max_delay` as an argument and waits for
@@ -15,6 +13,8 @@ Example Usage:
     print(asyncio.run(wait_random(5)))
     print(asyncio.run(wait_random(15)))
 """
+import asyncio
+import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
