@@ -7,6 +7,7 @@ corresponding to a page number and page size, making it easier
 to retrieve specific slices of data for paginated results.
 """
 
+
 def index_range(page, page_size):
     """
     Calculate the start and end index for a given pagination setup.
