@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+"""
+This module provides a helper function for pagination.
+
+The `index_range` function calculates the start and end indices
+corresponding to a page number and page size, making it easier
+to retrieve specific slices of data for paginated results.
+"""
 
 def index_range(page, page_size):
     """
