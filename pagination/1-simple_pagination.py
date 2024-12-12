@@ -62,4 +62,4 @@ class Server:
 
         # Retrieve and return the requested slice of the dataset
         dataset = self.dataset()
-        return dataset[start:end] if start < len(dataset) else []
+        return dataset[start:end]
